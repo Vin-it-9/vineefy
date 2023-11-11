@@ -22,7 +22,6 @@ body{
 .wrapper{
  
   width: 380px;
-  height: 100vh;
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
@@ -236,8 +235,7 @@ ul li.playing{
 background-image: none;
 background: linear-gradient(45deg ,  rgba(14, 0, 0, 0.4) , rgba(2, 0, 118, 0.8) 99%  );
   }
-  .wrapper { 
-    width: 60vh;
+  .wrapper {
    background: transparent;
   }
 
