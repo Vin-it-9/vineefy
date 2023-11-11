@@ -24,9 +24,16 @@ function loadMusic(indexNumb) {
   const music = allMusic[indexNumb - 1];
   musicName.innerText = music.name;
   musicArtist.innerText = music.artist;
+
+    
+  document.body.style.backgroundColor = music.backgroundColor;
+
   musicImg.src = `images/${music.src}.jpg`;
   mainAudio.src = `songs/${music.src}.mp3`;
+
+
 }
+
 
 function togglePlayPause() {
   if (isMusicPaused) {
@@ -94,7 +101,7 @@ progressArea.addEventListener("click", (e) => {
   const progressWidth = progressArea.clientWidth;
   const clickedOffsetX = e.offsetX;
   const songDuration = mainAudio.duration;
-  mainAudio.currentTime = (clickedOffsetX / progressWidth) * songDuration;
+  mainAudio.currentTime = (clickedOffsetX / progressWidth)*songDuration;
   playMusic();
   playingSong();
 });
@@ -124,16 +131,21 @@ mainAudio.addEventListener("ended", () => {
     case "repeat":
       nextMusic();
       break;
+
     case "repeat_one":
       mainAudio.currentTime = 0;
       loadMusic(musicIndex);
       playMusic();
       break;
+
     case "shuffle":
       let randIndex;
+
       do {
         randIndex = Math.floor(Math.random() * allMusic.length) + 1;
-      } while (musicIndex == randIndex);
+      } 
+      
+      while (musicIndex == randIndex);
       musicIndex = randIndex;
       loadMusic(musicIndex);
       playMusic();
@@ -177,17 +189,21 @@ for (let i = 0; i < allMusic.length; i++) {
 function playingSong() {
   const allLiTag = ulTag.querySelectorAll("li");
   for (let j = 0; j < allLiTag.length; j++) {
+
     const audioTag = allLiTag[j].querySelector(".audio-duration");
+    
     if (allLiTag[j].classList.contains("playing")) {
       allLiTag[j].classList.remove("playing");
       const adDuration = audioTag.getAttribute("t-duration");
       audioTag.innerText = adDuration;
     }
+
     if (allLiTag[j].getAttribute("li-index") == musicIndex) {
       allLiTag[j].classList.add("playing");
       audioTag.innerText = "Playing";
     }
     allLiTag[j].setAttribute("onclick", "clicked(this)");
+
   }
 }
 

@@ -20,16 +20,19 @@ body{
   min-height: 100vh;
 }
 .wrapper{
+ 
   width: 380px;
+  height: 100vh;
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  background: rgba(113, 113, 113, 0.6);
+ background-color: rgb(184, 26, 26);
   backdrop-filter: blur(5px);
   margin-left: 20px;
     margin-right: 20px;
 }
+
 .wrapper i{
   cursor: pointer;
 }
@@ -52,6 +55,7 @@ body{
 }
 .img-area{
   width: 100%;
+  height:fit-content;
   overflow: hidden;
   margin-top: 25px;
   box-shadow: 0px 6px 12px black;
@@ -185,6 +189,7 @@ background: white;
 }
 .header .row span{
   margin-left: 5px;
+  /* background: #c1c832; */
 }
 .header #close{
   font-size: 22px;
@@ -229,11 +234,11 @@ ul li.playing{
     height: 100vh;
   
 background-image: none;
-background: linear-gradient(45deg ,  rgba(14, 0, 0, 0.4) , rgba(2, 0, 118, 0.8) );
+background: linear-gradient(45deg ,  rgba(14, 0, 0, 0.4) , rgba(2, 0, 118, 0.8) 99%  );
   }
   .wrapper { 
     width: 60vh;
-    background: transparent;
+   background: transparent;
   }
 
   .music-list{
@@ -241,6 +246,29 @@ background: linear-gradient(45deg ,  rgba(14, 0, 0, 0.4) , rgba(2, 0, 118, 0.8) 
     background:rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(100%);
   }
+  .img-area{
+    background: black;
+    animation: fade 1.5s ease-in;
+
+  }
+  @keyframes fade {
+    0%{
+     
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+    
+  }
+
+
+
+  
+  
+
+  
+  
 
  
 }
