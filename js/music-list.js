@@ -4,8 +4,7 @@ let allMusic = [
     name: "CHOR NIKAL KE BHAGA",
     artist: "arijit singh",
     img: "img1",
-    src: "img1",
-    backgroundColor: "#cc0000"
+    src: "img1"
     
    
   
@@ -14,61 +13,53 @@ let allMusic = [
       name: "Chaleya",
       artist: "arijit singh",
     img: "img2",
-    src: "img2",
-    backgroundColor: "#ff8533"
+    src: "img2"
   
   },
   {
     name: "Heeriye",
     artist: "arijit singh",
     img: "img3",
-    src: "img3",
-    backgroundColor: "#ff6666"
+    src: "img3"
   },
   {
     name: "Challa",
     artist: "arijit singh",
     img: "img4",
-    src: "img4",
-    backgroundColor: "#ff1a1a"
+    src: "img4"
   },
   {
     name: "shiddat",
    artist : ".",
     img: "img5",
-    src: "img5",
-    backgroundColor: "#ffc14d"
+    src: "img5"
   },
   {
     name: "Baar Baar Dekho",
     artist : ".",
     img: "img6",
-    src: "img6",
-    backgroundColor: "#66e0ff"
+    src: "img6"
   },
 
   {
     name: "Tere Hawaale",
     artist: "Arjit singh",
     img: "img7",
-    src: "img7",
-    backgroundColor: "#734d26"
+    src: "img7"
   },
 
 
   {
     name: "Tera Ban Jaunga ", artist: "Arjit singh",
     img: "img9",
-    src: "img9",
-    backgroundColor: "#ff4d4d"
+    src: "img9"
   },
 
   {
     name: "Kal ho na ho",
     artist: "-",
     img: "img10",
-    src: "img10",
-    backgroundColor: "#660000"
+    src: "img10"
   },
 
 
@@ -77,70 +68,61 @@ let allMusic = [
     name: "zhihaal-e-miskin",
     artist: "-",
     img: "img11",
-    src: "img11",
-    backgroundColor: "#ae6c3e"
+    src: "img11"
   },
 
   {
     name: "kaash aisa bhi hota",
     artist: "-",
     img: "img12",
-    src: "img12",
-    backgroundColor: "#90806f"
+    src: "img12"
   },
 
   {
     name: "chale jaana phir",
     artist: "Arjit singh",
     img: "img13",
-    src: "img13",
-    backgroundColor: "#bf8465"
+    src: "img13"
   },
 
   {
     name: "Desi kalakar",
     artist: "Yo Yo Honey Singh",
     img: "img14",
-    src: "img14",
-    backgroundColor: "#598ec0"
+    src: "img14"
   },
   {
     name: "Dekhate Dekhate",
     artist: " Atif Aslam",
     img: "img15",
-    src: "img15",
-    backgroundColor: "#325b67"
+    src: "img15"
   },
 
   {
     name: "Khuda jaane",
     artist: " Anvita Dutt Guptan",
     img: "img16",
-    src: "img16",
-    backgroundColor: "#ebcc34"
+    src: "img16"
   },
   {
     name: "Ek tarfa",
     artist: "Darshan Raval",
     img: "img17",
-    src: "img17",
-    backgroundColor: "#161439"
+    src: "img17"
   },
 
   {
     name: "manjha tera",
     artist: "Vishal Mishra",
     img: "img19",
-    src: "img19",
-    backgroundColor: "#eae67b"
+    src: "img19"
   },
 
   {
     name: "Raanjhanaa",
     artist: "Dhanush",
     img: "img20",
-    src: "img20",
-    backgroundColor: " #95431d"
+    src: "img20"
   
   },
 

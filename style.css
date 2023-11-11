@@ -12,7 +12,7 @@ body{
   background-repeat:no-repeat;
   background-size: cover;
   backdrop-filter: blur(5px);
-  height: 100vh;
+  /* height: 100vh; */
   background-attachment: scroll;
   display: flex;
   align-items: center;
@@ -230,35 +230,21 @@ ul li.playing{
 
 @media (max-width: 767px) {
   body{
-    height: 100vh;
-  
+    
 background-image: none;
 background: linear-gradient(45deg ,  rgba(14, 0, 0, 0.4) , rgba(2, 0, 118, 0.8) 99%  );
   }
-  .wrapper {
+  .wrapper { 
    background: transparent;
   }
-
+/* 
   .music-list{
     position: absolute;
+    z-index: 5;
     background:rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(100%);
-  }
-  .img-area{
-    background: black;
-    animation: fade 1.5s ease-in;
-
-  }
-  @keyframes fade {
-    0%{
-     
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-    }
-    
-  }
+  } */
+ 
 
 
 

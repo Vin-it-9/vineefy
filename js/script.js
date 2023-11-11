@@ -25,9 +25,6 @@ function loadMusic(indexNumb) {
   musicName.innerText = music.name;
   musicArtist.innerText = music.artist;
 
-    
-  document.body.style.backgroundColor = music.backgroundColor;
-
   musicImg.src = `images/${music.src}.jpg`;
   mainAudio.src = `songs/${music.src}.mp3`;
 
