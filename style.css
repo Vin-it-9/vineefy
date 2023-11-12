@@ -7,29 +7,33 @@
 }
 
 
-body{
- background-image: url(https://images.pexels.com/photos/4585185/pexels-photo-4585185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-repeat:no-repeat;
-  background-size: cover;
+body{ background: linear-gradient(  rgba(0, 0, 0),rgb(49, 0, 0),rgb(52, 0, 0), rgb(90, 0, 0) , rgb(0, 0, 0)   );
+
+ 
   backdrop-filter: blur(5px);
-  /* height: 100vh; */
+  height: 100vh;
   background-attachment: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-}
-.wrapper{
  
-  width: 380px;
+}
+
+   
+.wrapper{
+  /* background: linear-gradient(  rgba(0, 0, 0),rgb(49, 0, 0),rgb(52, 0, 0), rgb(90, 0, 0) , rgb(0, 0, 0)   ); */
+     background: transparent;
+
+  width: 350px;
   padding: 25px 30px;
   overflow: hidden;
   position: relative;
+
   border-radius: 15px;
-  background: linear-gradient(  rgba(0, 0, 0),rgb(49, 0, 0),rgb(52, 0, 0), rgb(90, 0, 0) , rgb(0, 0, 0)   );
+ 
   backdrop-filter: blur(5px);
-  margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 10px;
+    margin-right: 10px;
 }
 
 .wrapper i{
@@ -158,10 +162,14 @@ background: white;
 }
 
 .music-list{
+
   position: absolute;
+  margin-left: 5px;
+  margin-right:5px ;
   background:rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(10px);
   width: 100%;
+  overflow: hidden;
   left: 0;
   bottom: -55%;
   opacity: 0;
@@ -175,6 +183,7 @@ background: white;
 .music-list.show{
   bottom: 0;
   opacity: 1;
+ 
   pointer-events: auto;
 }
 .header .row{
@@ -229,14 +238,7 @@ ul li.playing{
 }
 
 @media (max-width: 767px) {
-  body{
-    
-background-image: none;
-background: linear-gradient(  rgba(0, 0, 0),rgb(49, 0, 0),rgb(52, 0, 0), rgb(90, 0, 0) , rgb(0, 0, 0)   );
-  }
-  .wrapper { 
-   background: transparent;
-  }
+
 /* 
   .music-list{
     position: absolute;
